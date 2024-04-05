@@ -7,20 +7,19 @@
 <script>
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
-import HomeLayout from './components/HomeLayout.vue';
-import DashboardLayout from './components/DashboardLayout.vue';
+import HomeLayout from './components/layout/HomeLayout.vue';
+import DashboardLayout from './components/layout/DashboardLayout.vue';
 
 export default {
   setup() {
     const route = useRoute();
 
-    // Define a computed property to determine the current layout based on the route
     const currentLayout = computed(() => {
       // Check the route path to decide which layout to use
-      if (route.path === '/') {
-        return HomeLayout;
-      } else {
+      if (route.path.startsWith('/dashboard')) {
         return DashboardLayout;
+      } else {
+        return HomeLayout;
       }
     });
 

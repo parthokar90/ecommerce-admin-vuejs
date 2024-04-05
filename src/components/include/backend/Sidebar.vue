@@ -15,12 +15,12 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <RouterLink to="/role-list">
+            <RouterLink to="/dashboard/role-list">
               <i class="bi bi-circle"></i><span>List</span>
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/create-role">
+            <RouterLink to="/dashboard/create-role">
               <i class="bi bi-circle"></i><span>Add</span>
             </RouterLink>
           </li>
@@ -34,12 +34,12 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <RouterLink to="/user-list">
+            <RouterLink to="/dashboard/user-list">
               <i class="bi bi-circle"></i><span>List</span>
             </RouterLink>
           </li>
           <li>
-             <RouterLink to="/create-user">
+             <RouterLink to="/dashboard/create-user">
               <i class="bi bi-circle"></i><span>Add</span>
             </RouterLink>
           </li>
@@ -53,12 +53,12 @@
         </a>
         <ul id="category-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <RouterLink to="/category-list">
+            <RouterLink to="/dashboard/category-list">
               <i class="bi bi-circle"></i><span>List</span>
             </RouterLink>
           </li>
           <li>
-             <RouterLink to="/create-category">
+             <RouterLink to="/dashboard/create-category">
               <i class="bi bi-circle"></i><span>Add</span>
             </RouterLink>
           </li>
@@ -72,12 +72,12 @@
         </a>
         <ul id="attribute-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <RouterLink to="/attribute-list">
+            <RouterLink to="/dashboard/attribute-list">
               <i class="bi bi-circle"></i><span>List</span>
             </RouterLink>
           </li>
           <li>
-             <RouterLink to="/create-attribute">
+             <RouterLink to="/dashboard/create-attribute">
               <i class="bi bi-circle"></i><span>Add</span>
             </RouterLink>
           </li>
@@ -91,12 +91,12 @@
         </a>
         <ul id="product-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <RouterLink to="/product-list">
+            <RouterLink to="/dashboard/product-list">
               <i class="bi bi-circle"></i><span>List</span>
             </RouterLink>
           </li>
           <li>
-             <RouterLink to="/create-product">
+             <RouterLink to="/dashboard/create-product">
               <i class="bi bi-circle"></i><span>Add</span>
             </RouterLink>
           </li>
@@ -110,7 +110,7 @@
         </a>
         <ul id="order-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <RouterLink to="/order-list">
+            <RouterLink to="/dashboard/order-list">
               <i class="bi bi-circle"></i><span>List</span>
             </RouterLink>
           </li>

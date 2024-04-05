@@ -341,10 +341,8 @@
 </template>
 
 <script>
-import Product from '../components/product/Products.vue';
 export default {
   components: {
-    Product,
   },
   data() {
     return {

@@ -1,35 +1,39 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomePage from '../views/HomePage.vue';
-import AboutPage from '../views/AboutPage.vue';
-import DashboardPage from '../views/Dashboard.vue';
-import UserIndex from '../views/User/Index.vue';
-import UserCreate from '../views/User/Create.vue';
-import RoleIndex from '../views/Role/Index.vue';
-import RoleCreate from '../views/Role/Create.vue';
-import CategoryIndex from '../views/Category/Index.vue';
-import CategoryCreate from '../views/Category/Create.vue';
-import AttributeIndex from '../views/Attribute/Index.vue';
-import AttributeCreate from '../views/Attribute/Create.vue';
-import ProductIndex from '../views/Product/Index.vue';
-import ProductCreate from '../views/Product/Create.vue';
-import OrderIndex from '../views/Order/Index.vue';
+import HomePage from '../views/frontend/HomePage.vue';
+import AboutPage from '../views/frontend/AboutPage.vue';
+import LoginPage from '../views/frontend/Auth/Login.vue';
+import RegisterPage from '../views/frontend/Auth/Register.vue';
+import DashboardPage from '../views/backend/Dashboard/Dashboard.vue';
+import UserIndex from '../views/backend/User/Index.vue';
+import UserCreate from '../views/backend/User/Create.vue';
+import RoleIndex from '../views/backend/Role/Index.vue';
+import RoleCreate from '../views/backend/Role/Create.vue';
+import CategoryIndex from '../views/backend/Category/Index.vue';
+import CategoryCreate from '../views/backend/Category/Create.vue';
+import AttributeIndex from '../views/backend/Attribute/Index.vue';
+import AttributeCreate from '../views/backend/Attribute/Create.vue';
+import ProductIndex from '../views/backend/Product/Index.vue';
+import ProductCreate from '../views/backend/Product/Create.vue';
+import OrderIndex from '../views/backend/Order/Index.vue';
 import PostDetails from '../views/PostDetails.vue';
 
 const routes = [
   { path: '/', component: HomePage },
   { path: '/about', component: AboutPage },
+  { path: '/login', component: LoginPage },
+  { path: '/register', component: RegisterPage },
   { path: '/dashboard', component: DashboardPage },
-  { path: '/user-list', component: UserIndex },
-  { path: '/create-user', component: UserCreate },
-  { path: '/role-list', component: RoleIndex },
-  { path: '/create-role', component: RoleCreate },
-  { path: '/category-list', component: CategoryIndex },
-  { path: '/create-category', component: CategoryCreate },
-  { path: '/attribute-list', component: AttributeIndex },
-  { path: '/create-attribute', component: AttributeCreate },
-  { path: '/product-list', component: ProductIndex },
-  { path: '/create-product', component: ProductCreate },
-  { path: '/order-list', component: OrderIndex },
+  { path: '/dashboard/user-list', component: UserIndex },
+  { path: '/dashboard/create-user', component: UserCreate },
+  { path: '/dashboard/role-list', component: RoleIndex },
+  { path: '/dashboard/create-role', component: RoleCreate },
+  { path: '/dashboard/category-list', component: CategoryIndex },
+  { path: '/dashboard/create-category', component: CategoryCreate },
+  { path: '/dashboard/attribute-list', component: AttributeIndex },
+  { path: '/dashboard/create-attribute', component: AttributeCreate },
+  { path: '/dashboard/product-list', component: ProductIndex },
+  { path: '/dashboard/create-product', component: ProductCreate },
+  { path: '/dashboard/order-list', component: OrderIndex },
   { path: '/post/:id',  name: 'PostDetails', component: PostDetails },
 ];
 

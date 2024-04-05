@@ -1,3 +1,3 @@
 <template>
- <h1>Home Layout</h1>
+ This is Footer
 </template>

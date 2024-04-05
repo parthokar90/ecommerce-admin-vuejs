@@ -17,14 +17,14 @@
 </template>
 
 <style>
-@import "../assets/vendor/bootstrap-icons/bootstrap-icons.css";
-@import "../assets/css/style.css";
+@import "../../assets/vendor/bootstrap-icons/bootstrap-icons.css";
+@import "../../assets/css/style.css";
 </style>
 
 <script>
-import Header from './include/Header.vue';
-import Sidebar from './include/Sidebar.vue';
-import Footer from './include/Footer.vue';
+import Header from '../include/backend/Header.vue';
+import Sidebar from '../include/backend/Sidebar.vue';
+import Footer from '../include/backend/Footer.vue';
 
 export default {
   components: {
